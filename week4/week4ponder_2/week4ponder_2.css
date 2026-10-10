@@ -1,0 +1,113 @@
+:root { color-scheme: light dark; }
+
+/* General Page Styling */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+/* Header */
+
+header {
+    background-color: #4f75a8;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0 0 1rem;
+}
+
+/* Hamburger Menu Button */
+
+.menu-btn {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-btn span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* Hamburger Animation */
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Navigation */
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+/* Hide Navigation on Mobile */
+
+.hide {
+    display: none;
+}
+
+/* Main Content */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: #4f75a8;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Desktop Layout */
+
+@media screen and (min-width: 700px) {
+    .menu-btn {
+        display: none;
+    }
+
+    nav,
+    nav.hide {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        display: block;
+    }
+}
